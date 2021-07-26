@@ -96,7 +96,7 @@ public final class DuckDBErrors {
         errors.add("Cannot explicitly insert values into rowid column"); // TODO: don't insert into rowid
         errors.add(" Column with name rowid does not exist!"); // currently, there doesn't seem to way to determine if
                                                                // the table has a primary key
-        errors.add("Conversion Error: Could not cast value");
+        errors.add("Could not cast value");
         errors.add("create unique index, table contains duplicate data");
     }
 
