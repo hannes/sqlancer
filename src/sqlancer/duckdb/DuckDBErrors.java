@@ -77,6 +77,7 @@ public final class DuckDBErrors {
         errors.add("extract specifier"); // date_part
         errors.add("not recognized"); // date_part
         errors.add("not supported"); // date_part
+        errors.add("Failed to cast");
         errors.add("Could not cast value");
         errors.add("Insufficient padding in RPAD"); // RPAD
         errors.add("Could not choose a best candidate function for the function call"); // monthname
@@ -98,6 +99,7 @@ public final class DuckDBErrors {
                                                                // the table has a primary key
         errors.add("Could not cast value");
         errors.add("create unique index, table contains duplicate data");
+        errors.add("Failed to cast");
     }
 
     public static void addGroupByErrors(ExpectedErrors errors) {
