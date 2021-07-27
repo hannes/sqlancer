@@ -78,6 +78,7 @@ public final class DuckDBErrors {
         errors.add("not recognized"); // date_part
         errors.add("not supported"); // date_part
         errors.add("Failed to cast");
+        errors.add("Conversion Error");
         errors.add("Could not cast value");
         errors.add("Insufficient padding in RPAD"); // RPAD
         errors.add("Could not choose a best candidate function for the function call"); // monthname
@@ -86,6 +87,9 @@ public final class DuckDBErrors {
     }
 
     public static void addInsertErrors(ExpectedErrors errors) {
+        addRegexErrors(errors);
+        addFunctionErrors(errors);
+
         errors.add("NOT NULL constraint failed");
         errors.add("PRIMARY KEY or UNIQUE constraint violated");
         errors.add("duplicate key");
