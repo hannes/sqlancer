@@ -89,9 +89,8 @@ public final class DuckDBErrors {
         errors.add("duplicate key");
         errors.add("can't be cast because the value is out of range for the destination type");
         errors.add("Could not convert string");
-        errors.add("timestamp field value out of range");
         errors.add("Unimplemented type for cast");
-        errors.add("date/time field value out of range");
+        errors.add("field value out of range");
         errors.add("CHECK constraint failed");
         errors.add("Cannot explicitly insert values into rowid column"); // TODO: don't insert into rowid
         errors.add(" Column with name rowid does not exist!"); // currently, there doesn't seem to way to determine if
